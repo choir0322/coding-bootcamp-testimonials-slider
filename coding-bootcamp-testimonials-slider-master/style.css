@@ -1,0 +1,88 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-image:url('images/pattern-curve.svg'), url('images/pattern-bg.svg');
+    background-repeat:no-repeat;
+    background-position: top 100% right 100%, top 50% left 95%;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items:center;
+    width: calc(100vw - 20vw);
+    height:calc(100vh - 20vh);
+}
+
+.pictureContainer img{
+    width:480px;
+    height:auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.arrowContainer{
+    display:flex;
+    position:relative;
+    top:240px;
+    left:150px;
+    box-shadow: 0px 15px 10px -15px #111;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.arrowContainer button{
+    width:60px;
+    height:60px;
+    border:none;
+}
+
+.arrowContainer button:focus{
+    outline:none;
+}
+
+.arrowContainer .next{
+    border-radius: 0px 50px 50px 0px;
+    background-color:white;
+}
+
+.arrowContainer .prev{
+    border-radius: 50px 0px 0px 50px;
+    background-color:white;
+}
+
+.descriptionContainer{
+    background-image: url('images/pattern-quotes.svg');
+    background-repeat:no-repeat;
+    width:610px;
+    padding-right:8vw;
+}
+
+.descriptionContainer p{
+    font-size:32px;
+    font-weight:300;
+    color:hsl(240, 38%, 20%);
+}
+
+.profile{
+    display:flex;
+    gap:20px;
+}
+
+.profile .name{
+    color:hsl(240, 38%, 20%);
+    font-weight:700;
+    font-size:28px;
+}
+
+.profile .position{
+    color: hsl(240, 18%, 77%);
+    font-size:28px;
+}
